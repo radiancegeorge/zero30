@@ -439,6 +439,20 @@ header form button{
 .away{
     right: -600px;
 }
+.cancel-form{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    transition: 0.3s;
+    /* display: none; */
+}
+.cancel-form:hover{
+    font-size: 38px;
+    transform: rotateZ(-45deg);
+}
 @media (max-width: 560px){
     .away{
      opacity: 0;
@@ -446,6 +460,7 @@ header form button{
      z-index: 100;
      right: auto!important;   
      top: auto;
+
     }
     header form{
         top: 200px;
