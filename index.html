@@ -24,7 +24,7 @@
                     <li class="sign-up"><a>Sign Up</a></li>
                 </ul>
             </div>
-            <form action="" class="sign-up">
+            <form action="" class="sign-up away">
                 <h1>Get Started</h1>
                 <div class="business">
                     <label for="business_name"><input type="text" placeholder="Business Name" name="business_name" required></label>
@@ -45,9 +45,14 @@
                 </div>
                 <div class="password">
                     <label for="password">
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="password" placeholder="Confirm Password" name="confirm_password" required>
                     </label>
                 </div>
+                <div class="agree">
+                    <p>By clicking “Submit” you agree to <a href="">Zero30’s Terms and Conditions</a> and acknowledge that you have read the <a href="">Privacy Policy</a></p>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </header>
@@ -92,5 +97,6 @@
         </div>
     </section>
     <script src="js/drawer.js"></script>
+    <script src="js/sign up drawer.js"></script>
 </body>
 </html>

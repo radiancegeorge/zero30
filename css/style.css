@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
+html, body{
+    overflow-x: hidden;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -38,6 +40,7 @@ header li a{
     font-size: 16px;
     /* margin-right: 41px; */
     padding: 20px;
+    display: block;
     font-family: Roboto;
     font-weight: 700;
 }
@@ -367,7 +370,8 @@ header form{
     right: 20px;
     background: white;
     z-index: 10;
-    padding: 20px;
+    padding: 30px;
+    transition: 0.3s;
 }
 header form h1{
     font-size: 18px;
@@ -412,4 +416,40 @@ header form [for="number"] span{
 header form [for="number"] img{
     margin-right: 5px;
     display: block;
+}
+header form .agree p{
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+    font-family: Roboto;
+}
+header form .agree a{
+    font-size: 14px;
+    color: #57A35A;
+}
+header form button{
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    display: block;
+    width: 100%;
+    background: #57A35A;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+.away{
+    right: -600px;
+}
+@media (max-width: 560px){
+    .away{
+     opacity: 0;
+     pointer-events: none;
+     z-index: 100;
+     right: auto!important;   
+     top: auto;
+    }
+    header form{
+        top: 200px;
+        width: 100%;
+        left: 0;
+    }
 }
