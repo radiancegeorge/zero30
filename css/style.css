@@ -18,6 +18,7 @@ header{
 .container{
     max-width: 80vw;
     margin: auto;
+    position: relative;
 }
 header ul{
     display: flex;
@@ -28,6 +29,9 @@ header .main-navigation{
     justify-content: space-between;
     max-width: 70vw;
     margin: auto;
+}
+header .sign-up{
+    cursor: pointer;
 }
 header li a{
     color: white;
@@ -355,4 +359,57 @@ header li a{
     .login .logo-white{
         width: 50px;
     }
+}
+header form{
+    width: 400px;
+    position: absolute;
+    top: 68px;
+    right: 20px;
+    background: white;
+    z-index: 10;
+    padding: 20px;
+}
+header form h1{
+    font-size: 18px;
+    margin: 40px 0;
+}
+header form input{
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #E5E5E5;
+}
+header form label{
+    display: block;
+    margin: 0;
+}
+header form input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(96, 84, 84, 0.68);
+    font-family: Roboto;
+}
+header form div{
+    margin-bottom: 30px;
+}
+header form [for="names"]{
+    display: flex;
+}
+header form [for="number"]{
+    display: flex;
+    align-items: stretch;
+}
+header form [for="number"] span{
+    display: flex;
+    border: 1px solid #E5E5E5;
+    padding: 10px 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+}
+header form [for="number"] img{
+    margin-right: 5px;
+    display: block;
 }
