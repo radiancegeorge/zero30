@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Roboto;
+}
+.burger{
+    display: none;
+}
+header{
+    background: #FA6400;
+    padding: 5px;
+}
+.container{
+    max-width: 80vw;
+    margin: auto;
+}
+header ul{
+    display: flex;
+}
+header .main-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+}
+header li a{
+    color: white;
+    font-size: 16px;
+    margin-right: 41px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.rectangle .wrap{
+    position: relative;
+}
+.rectangle .wrap img{
+    width: 100%;
+}
+.rectangle .jumbo{
+    color: white;
+    max-width: 556px;
+    background: rgba(96,84,84,0.68);
+
+    position: absolute;
+    border-radius: 30px;
+    padding: 50px;
+    top: 183px;
+    left: 106px;
+}
+.rectangle .jumbo h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.rectangle .jumbo h1 span{
+    text-decoration: underline;
+}
+.rectangle .wrap p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.rectangle .wrap a{
+    color: black;
+    background: #d4942a;
+    border-radius: 60px;
+    padding: 10px 45px;
+    display: block;
+    width: fit-content;
+    margin-top: 31px;
+}
+.get-your-products{
+    position: relative;
+    z-index: 2;
+}
+.get-your-products .wrap{
+    max-width: 860px;
+    margin: auto;
+    margin-top: -80px;
+    background: white;
+    padding: 26px 20px;
+}
+.get-your-products .content{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.get-your-products h5{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+.get-your-products h4{
+    font-size: 24px;
+    max-width: 368px;
+}
+.get-your-products .box p{
+    font-size: 14px;
+    margin: 11px;
+}
+.get-your-products .box{
+    flex-basis: 32%;
+}
+.get-your-products .wrap h1{
+    font-size: 24px;
+    margin: 18px 0;
+}
+.get-your-products a{
+    color: white;
+    background: #FA6400;
+    border-radius: 10px;
+    padding: 10px 65px;
+    display: block;
+    width: fit-content;
+    font-weight: 15px;
+}
+.get-started{
+    margin-top: 40px;
+}
+@media (max-width: 1050px){
+    .container{
+        max-width: 80vw;
+    }
+    .get-your-products .wrap{
+        max-width: 60vw;
+        /* margin: auto; */
+        margin-top: -30px;
+    }
+    .get-your-products .box{
+        flex-basis: 45%;
+    }
+    .get-your-products .content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 779px){
+    .get-your-products .wrap{
+        margin-top: 20px;
+        max-width: 80vw;
+    }
+    .container{
+        max-width: 90vw;
+    }
+    header .main-navigation{
+        max-width: 85vw;
+    }
+    .rectangle .jumbo{
+        top: 50px;
+        left: 50px;
+    }
+
+}
+@media (max-width:560px){
+    .container{
+        max-width: 100vw;
+        /* padding: 10px; */
+    }
+    .rectangle .jumbo{
+        left: 0;
+        top: 0;
+        padding: 60px 10px;
+    }
+    .get-your-products .wrap{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .get-your-products a{
+        margin: auto;
+    }
+    header ul{
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        z-index: 99;
+        background: #FA6400;
+        width: 100%;
+        padding: 0px;
+        padding: 10px 0;
+        height: fit-content;
+        transition: 0.3s;
+        /* max-width: 90px; */
+    }
+    .hide{
+        height: 0!important;
+        padding: 0px 0px;
+    }
+    .burger{
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .burger div{
+        border: 2px solid white;
+        width: 25px;
+        margin: 4px;
+        border-radius: 3px;
+    }
+    header ul li a{
+        padding: 10px;
+        display: block;
+    }
+    header .main-navigation{
+        max-width: 90vw;
+        position: relative;
+    }
+}
+@media (max-width:330px){
+    .rectangle .jumbo{
+        padding: 40px 10px;
+    }
+    .get-your-products .wrap{
+        margin-top: 140px;
+    }
+}
+
+.login .wrap{
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+.login .left, .login .right{
+    flex-basis: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login .logo, .login .logo-white{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.login .logo-white img{
+    width: 100%;
+
+}
+.login .logo-white{
+    width: 80px;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+.login .right{
+    min-height: 100%;
+    background-color:#FA6400 ;
+    color: white;
+}
+.login .right input{
+    color: white;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid #e85d00;
+    border-radius: 8px;
+    max-width:500px ;
+    margin: 9px 0px;
+    padding: 15px;
+    width: 100%;
+}
+.login .right form label input::placeholder{
+    color: white!important;
+    font-size: 13px;
+    font-weight: 200;
+}
+.login label{
+    width: 482px ;
+    display: block;
+    margin: 30px 0;
+}
+.login form{
+    width: fit-content;
+    margin: auto;
+}
+.login h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0;
+}
+.login label:nth-child(3){
+    margin-bottom: 0px;
+    /* background: green; */
+}
+.login label p{
+    font-size: 15px;
+}
+.login a{
+    color: white;
+    display: block;
+}
+.login .right form a:nth-child(4){
+    text-align: right;
+    margin: 5px 0;
+    
+    /* color: black; */
+}
+.login button{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.login form a:nth-child(6){
+    /* color: green; */
+    text-align: center;
+    margin-top: 30px;
+    font-family: Noto sans;
+    font-size: 15px;
+}
+@media (max-width: 770px){
+    .login .left{
+        display: none;
+    }
+    .login .right{
+        flex-basis: 100%;
+    }
+    .login .logo-white{
+        display: block;
+        width: 70px;
+        left: 9vw;
+    }
+    .login .logo{
+        display: none;
+    }
+    .login form{
+        padding: 10px;
+        margin: auto;
+        max-width: 100vw;
+        width: 90%;
+    }
+    .login label {
+        width: 100%!important;
+    } 
+    .login form input{
+        width: 100%!important;
+    }
+}
+@media (max-width: 330px){
+    .login form{
+        margin-top: 80px;
+    }
+    .login .logo-white{
+        width: 50px;
+    }
+}
