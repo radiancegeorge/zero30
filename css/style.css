@@ -474,3 +474,13 @@ header form button{
         left: 0;
     }
 }
+.wrong-password{
+    position: absolute;
+    margin-top: -30px;
+    background: white;
+    padding: 5px 10px;
+    color: #FA6400;
+    border-radius: 8px;
+    width: fit-content;
+    font-size: 14px;
+}
