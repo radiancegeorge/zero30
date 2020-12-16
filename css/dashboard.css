@@ -86,7 +86,7 @@ nav .logo:after{
     border: 1px solid white;
     top: -1rem;
 }
-.options::after{
+ .options::after{
     content: '';
     position: absolute;
     border: 0.05px solid lightgrey;
@@ -392,4 +392,110 @@ td{
         flex-basis: 25%;
     }
 
+}
+.profile-section ul{
+    padding: 0;
+    display: flex;
+}
+.profile-section ul li{
+    padding: 0 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    /* cursor: pointer; */
+    font-weight: 700;
+}
+.profile-section .active{
+    position: relative;
+}
+.profile-section .active a{
+    color: #E85D00;
+}
+.profile-section .active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1px solid #E85D00;
+    left: 0;
+    bottom: -20px;
+}
+.profile-section ul li a{
+    color: initial;
+}
+.profile-detail-content{
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+}
+.profile-detail-content .manage-options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-detail-content .manage-options div{
+    margin-left: 20px;
+    padding: 10px 12px;
+    border: 1px solid #E85D00;
+    border-radius: 5px;
+}
+.profile-detail-content a{
+    color: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    min-width: 130px;
+    text-align: center;
+    color: #E85D00;
+}
+.profile-detail-content .manage-options div:nth-child(2){
+    background: #E85D00;
+}
+.profile-detail-content .manage-options div:nth-child(2) a{
+    color: white;
+}
+.profile-detail-content table{
+    margin: 20px 0;
+    color: rgba(96, 84, 84, 0.76);
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    /* border-spacing: 15px!important; */
+
+}
+.profile-detail-content table th{
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 5px;
+}
+.profile-detail-content table td{
+    padding: 20px 5px;
+    border-bottom:1px solid #E5E5E5;
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-detail-content table tr{
+}
+@media (max-width:560px){
+    .profile-detail-content .table{
+        overflow-x: scroll!important;
+    }
+    .profile-detail-content{
+        width: 100%;
+    }
+    .profile-detail-content .manage-options{
+        justify-content: space-between;
+    }
+     .profile-section{
+        padding-top: 30px!important;
+    }
+    .profile-detail-content .manage-options div{
+        min-width: 0;
+        padding: 10px 2px;
+        margin: 0;
+        flex-basis: 48.5%!important;
+        justify-content: center;
+    }
 }
