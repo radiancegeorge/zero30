@@ -499,3 +499,110 @@ td{
         justify-content: center;
     }
 }
+.profile-detail-content form{
+    max-width: 800px;
+    padding: 10px;
+}
+.profile-detail-content h1{
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+    text-align: center;
+    margin: 30px;
+}
+.profile-detail-content form label{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    /* justify-content: space-between; */
+}
+.profile-detail-content form label input{
+    width: 300px;
+    margin-left: 20px;
+    padding: 10px 16px;
+    border: 1px solid #DADADA;
+}
+.profile-detail-content form label p, .profile-detail-content form label span{
+    width: 64px;
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+    margin-left: 20px;
+}
+.profile-detail-content form label span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F5F4F4;
+    padding: 10px 16px;
+}
+.profile-detail-content form [for="number"] span{
+    width: unset;
+}
+.profile-detail-content form [for="number"] img{
+    margin-right: 5px;
+}
+.profile-detail-content form [for="number"] input{
+    margin-left: 0;
+    width: 215px;
+}
+.profile-detail-content form a, .profile-detail-content form button{
+    display: block;
+    padding: 10px 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    background: #F5F4F4;
+    color: rgba(96, 84, 84, 0.68);
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+.profile-detail-content form button{
+    margin-top: 60px;
+    margin-left: auto;
+    cursor: pointer;
+}
+@media (max-width: 560px){
+    .profile-detail-content form input{
+        margin-left: 0!important;
+    }
+    .profile-detail-content form label{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .profile-detail-content form label p{
+        margin-bottom: 10px;
+        margin-left: 0!important;
+    }
+    .profile-detail-content form [for="number"]{
+        /* width: fit-content; */
+        display: flex;
+        align-items: center;
+        /* margin-left: 0; */
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .profile-detail-content form [for="number"] p{
+        width: 100%;
+        /* margin-left: 10px!important; */
+    }
+    .profile-detail-content form [for="number"] span{
+        /* margin-left: 10px!important; */
+        margin-left: 0;
+    }
+    .profile-detail-content form [for="number"] input{
+        max-width:230px;
+    }
+    .profile-detail-content form a{
+        margin-left: 0;
+        width: 230px;
+    }
+    
+}
+@media (max-width:350px){
+    .profile-detail-content form input{
+        width: 100%!important;
+    }
+    .profile-detail-content form [for="number"] input{
+        max-width: 150px;
+    }
+}
