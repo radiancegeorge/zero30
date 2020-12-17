@@ -695,3 +695,125 @@ td{
 .add-user-btn{
     cursor: pointer;
 }
+.roles-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: white;
+    font-family: Roboto;
+    /* max-width: 80%; */
+}
+.roles-content h1{
+    font-size: 16px;
+    padding: 20px 20px 0 30px;
+}
+.default-roles{
+    flex-basis: 25%;
+    font-size: 16px;
+    color: rgba(96, 84, 84, 0.76);
+}
+.default-roles ul{
+    padding: 0;
+    margin: 10px 0;
+}
+.default-roles ul li{
+    padding: 20px 30px;
+    border-bottom: 1px solid #F5F4F4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.default-roles ul li:hover{
+    background: rgba(10, 164, 230, 0.29);
+}
+.custom-role{
+    padding: 20px 30px;
+}
+.custom-role h4{
+    font-size: 15px;
+}
+.custom-role p{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #C4C4C4;
+}
+.custom-role span{
+    display: block;
+    color: #57A35A;
+    padding: 10px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+.abilities{
+    display: flex;
+    flex-basis: 75%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: rgba(96, 84, 84, 0.76);
+    padding: 40px;
+
+}
+.abilities h1{
+    flex-basis: 100%;
+    padding: 0;
+    margin: 20px 0;
+}
+.abilities div{
+    padding: 0;
+    flex-basis: 48%;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid rgba(87, 163, 90, 0.53);
+    min-height: 200px;
+
+}
+.abilities ul{
+    padding: 24px;
+}
+.abilities h4{
+    padding: 14px;
+    background: rgba(87, 163, 90, 0.53);
+}
+.abilities ul li span{
+    font-weight: 700;
+    font-size: 16px;
+}
+.abilities ul li{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 5px;
+    border-bottom: 1px solid #DADADA;
+}
+.full-access{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent!important;
+    border-radius: 0;
+}
+.abilities .no-access{
+    border-color: rgba(216, 59, 41, 0.41);
+}
+.abilities .no-access h4{
+    background: rgba(216, 59, 41, 0.41);
+}
+@media (max-width: 560px){
+    .roles-content{
+        flex-wrap: wrap;
+    }
+    .default-roles{
+        flex-basis: 100%;
+    }
+    .abilities{
+        flex-basis: 100%;
+    }
+    .abilities div{
+        flex-basis: 100%!important;
+        margin-bottom: 20px;
+    }
+}
