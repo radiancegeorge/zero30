@@ -1,19 +1,9 @@
 window.addEventListener('load', e =>{
-    // alert('loaded')
-    const addUserBtn = document.querySelector('.profile-detail-content .add-user-btn');
-    const addUser = document.querySelector('.add-user-content');
-    const resetBtn = document.querySelector('.add-user-content [type="reset"]');
+    NodeList.prototype.indexOf = Array.prototype.indexOf;
+   
     const roles = document.querySelectorAll('.default-roles ul li');
     const rolesContent = document.querySelectorAll('.abilities');
-
-    // console.log(rolesContent.index)
-
-    addUserBtn.addEventListener('click', e =>{
-        addUser.classList.toggle('hide');
-    });
-    resetBtn.addEventListener('click', e=>{
-        addUser.classList.toggle('hide')
-    });
+   
 
 
 
@@ -23,6 +13,10 @@ window.addEventListener('load', e =>{
                 //do nothing
             }else{
                 role.classList.toggle('selected-opt');
+                roles.forEach(roleAgain=>{
+                    e.target !== roleAgain && roleAgain.classList.remove('selected-opt')
+                })
+
                 rolesContent.forEach(content=>{
                     if(rolesContent.indexOf(content) === roles.indexOf(e.target)){
                         content.classList.toggle('not-selected')

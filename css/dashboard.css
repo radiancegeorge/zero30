@@ -811,9 +811,16 @@ td{
     }
     .abilities{
         flex-basis: 100%;
+        padding: 30px;
     }
     .abilities div{
         flex-basis: 100%!important;
         margin-bottom: 20px;
     }
+}
+.not-selected{
+    display: none!important;
+}
+.default-roles .selected-opt{
+    background: rgba(10, 164, 230, 0.29);
 }

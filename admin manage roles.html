@@ -106,7 +106,7 @@
                         <div class="default-roles">
                             <h1>Default Roles</h1>
                             <ul>
-                                <li>Admin</li>
+                                <li class="selected-opt">Admin</li>
                                 <li>Sales</li>
                                 <li>Support</li>
                             </ul>
@@ -144,6 +144,55 @@
                                 <!-- <ul></ul> -->
                             </div>
                         </div>
+                        <div class="abilities not-selected">
+                            <h1>Sales</h1>
+                            <div class="access">
+                                <h4>What this role can access</h4>
+                                <ul>
+                                    
+                                    <li><span>Can</span> Add Products</li>
+                                    <li><span>Can</span> Edit Products</li>
+                                    <li><span>Can</span> Dispatch Riders</li>
+                                    <li><span>Can</span> Add Riders</li>
+                                    <li><span>Can</span> Add Merchants</li>
+                                    <li><span>Can</span> Manage Merchants</li>
+                                    <li><span>Can</span> Create Roles</li>
+                                    <li><span>Can</span> Manage Roles</li>
+                                </ul>
+                            </div>
+                            <div class="no-access">
+                                <h4>What this role cannot access</h4>
+                                <ul>
+                                    <li><span>Cannot</span> Add Users</li>
+                                    <li><span>Cannot</span> Manage Users</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="abilities not-selected">
+                            <h1>Support</h1>
+                            <div class="access">
+                                <h4>What this role can access</h4>
+                                <ul>
+                                    
+                                    <li><span>Can</span> Create Roles</li>
+                                    <li><span>Can</span> Manage Roles</li>
+                                </ul>
+                            </div>
+                            <div class="no-access">
+                                <h4>What this role cannot access</h4>
+                                
+                                <ul>
+                                    <li><span>Cannot</span> Add Users</li>
+                                    <li><span>Cannot</span> Manage Users</li>
+                                    <li><span>Cannot</span> Add Products</li>
+                                    <li><span>Cannot</span> Edit Products</li>
+                                    <li><span>Cannot</span> Dispatch Riders</li>
+                                    <li><span>Cannot</span> Add Riders</li>
+                                    <li><span>Cannot</span> Add Merchants</li>
+                                    <li><span>Cannot</span> Manage Merchants</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +201,7 @@
 
     </section>
 
-    <script src="js/dashboard.js"></script>
+    <script src="js/admin-roles.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
