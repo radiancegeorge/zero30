@@ -113,8 +113,8 @@
                                         <span>Manage Roles</span>
                                     </a>
                                 </div>
-                                <div class="roles">
-                                    <a href="">
+                                <div class="roles add-user-btn">
+                                    <a>
                                         <span>+ Add User</span>
                                     </a>
                                 </div>
@@ -162,11 +162,36 @@
                     </div>
                 </div>
             </div>
+            <div class="add-user-content hide">
+                <div class="wrap">
+                    <h1>Add User</h1>
+                    <form action="">
+                        <label for="full name">
+                            <p>Full Name</p>
+                            <input type="text" placeholder="Obiora Anyasi" name="full_name">
+                        </label>
+                        <label for="Email">
+                            <p>Email Address</p>
+                            <input type="text" placeholder="........@gmail.com" name="email">
+                        </label>
+                        <label for="role">
+                            <p>Role</p>
+                            <select name="" id="">
+                                <option value="">Choose Role</option>
+                            </select>
+                        </label>
+                        <div class="buttons">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Done</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
     </section>
 
-
+    <script src="js/dashboard.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@
     letter-spacing: 0em;
     text-align: left;
     overflow-y: auto;
+    z-index: 99;
 }
 .burger, .cancel{
     display: none;
@@ -105,6 +106,7 @@ nav .logo:after{
 .main-body{
     flex-basis: 100%;
     /* padding: 20px; */
+    /* position: relative; */
 }
 .search-section{
     padding-top: 10px;
@@ -605,4 +607,91 @@ td{
     .profile-detail-content form [for="number"] input{
         max-width: 150px;
     }
+}
+.add-user-content{
+    font-family: Roboto;
+    width: 100vw;
+    background: rgba( 232,93,0,0.44);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* z-index: ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+.add-user-content .wrap{
+    background: white;
+    width: 430px;
+    border-radius: 10px;
+}
+.add-user-content .wrap h1{
+    padding: 20px 10px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+.add-user-content form{
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+}
+.add-user-content form label{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 15px 0;
+    color: rgba(96, 84, 84, 0.76);
+}
+.add-user-content form label p, .add-user-content form [for="role"] p{
+    flex-basis: 120px!important;
+    margin-right: 10px;
+}
+.add-user-content form input, .add-user-content form select{
+    border: 1px solid #E5E5E5;
+    padding: 10px 18px;
+    flex-basis: 80%;
+}
+.add-user-content form input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+.add-user-content form button{
+    border-radius: 5px;
+    background: #F5F4F4;
+    padding: 10px 30px;
+    min-width: 105.5px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid transparent;
+    color: rgba(96, 84, 84, 0.76);
+    cursor: pointer;
+    /* color: ; */
+}
+.add-user-content form .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 40px 0;
+}
+.add-user-content form button:nth-child(2){
+    background: #E85D00;
+    color: white;
+}
+.add-user-content form::after{
+    content: '';
+    position: absolute;
+    bottom: 140px;
+    width: 99.6%;
+    border: .05pt solid #F5F4F4;
+    left: 0;
+}
+.main-body .hide{
+    opacity: 0;
+    pointer-events: none;
+}
+.add-user-btn{
+    cursor: pointer;
 }
