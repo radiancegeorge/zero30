@@ -612,7 +612,7 @@ td{
     font-family: Roboto;
     width: 100vw;
     background: rgba( 232,93,0,0.44);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -823,4 +823,37 @@ td{
 }
 .default-roles .selected-opt{
     background: rgba(10, 164, 230, 0.29);
+}
+.add-custom-role form label p{
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+.add-custom-role form label{
+    flex-wrap: wrap;
+}
+.add-custom-role form ul{
+    flex-basis: 100%;
+}
+.add-custom-role form ul li{
+    padding: 15px 10px;
+    border-bottom:1px solid rgba(218, 218, 218, 0.37);
+}
+.add-custom-role form label [type="checkbox"]{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.add-custom-role form textarea, .add-custom-role form label [type="text"]{
+    border: 1px solid rgba(218, 218, 218, 0.37);
+    min-width: 100%;
+}
+.add-custom-role .wrap{
+    width: 350px;
+    overflow-y: scroll!important;
+    max-height: 98vh;
+}
+.add-custom-role h1{
+    color: rgba(96, 84, 84, 0.76);
+}
+.add-custom-role{
+    /* overflow-y: scroll; */
 }

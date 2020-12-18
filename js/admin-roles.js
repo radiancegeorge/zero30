@@ -3,8 +3,16 @@ window.addEventListener('load', e =>{
    
     const roles = document.querySelectorAll('.default-roles ul li');
     const rolesContent = document.querySelectorAll('.abilities');
-   
+    const addUserBtn = document.querySelector('.custom-role span');
+    const addUser = document.querySelector('.add-custom-role');
+    const resetBtn = document.querySelector('.add-custom-role [type="reset"]');
 
+    addUserBtn.addEventListener('click', e =>{
+        addUser.classList.toggle('hide');
+    });
+    resetBtn.addEventListener('click', e=>{
+        addUser.classList.toggle('hide')
+    });
 
 
     roles.forEach(role=>{
