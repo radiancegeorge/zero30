@@ -659,7 +659,7 @@ td{
     font-weight: 400;
     color: #E5E5E5;
 }
-.add-user-content form button{
+.add-user-content form button, .options-modified form button{
     border-radius: 5px;
     background: #F5F4F4;
     padding: 10px 30px;
@@ -671,12 +671,12 @@ td{
     cursor: pointer;
     /* color: ; */
 }
-.add-user-content form .buttons{
+.add-user-content form .buttons, .options-modified form .buttons{
     display: flex;
     justify-content: space-between;
     margin: 80px 0 40px 0;
 }
-.add-user-content form button:nth-child(2){
+.add-user-content form button:nth-child(2), .options-modified form button:nth-child(2){
     background: #E85D00;
     color: white;
 }
@@ -919,5 +919,90 @@ td{
     .export-table button{
         padding: 5px 15px;
         margin-right: 10px;
+    }
+}
+.search-section select optgroup, .search-section select option{
+    display: none;
+}
+.options-modified{
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #F5F4F4;
+    border: 1px solid #E5E5E5;
+    position: absolute;
+    z-index: 98;
+    left: 0;
+    margin-top: 20px;
+    top: 90px;
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.76);
+    font-family: Roboto;
+    padding: 20px;
+    transition: 0.2s;
+}
+.options-modified::before{
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    top: 0;
+    left: 60px;
+    margin-top: -30px;
+    border-bottom: 15px solid #F5F4F4;
+    
+}
+.options-modified form label{
+    margin: 15px 0px;
+    display: block;
+}
+.options-modified form label p{
+    margin: 5px 0;
+    font-weight: 700;
+}
+.options-modified form label select{
+    width: 100%;
+    color: inherit;
+}
+.options-modified form label input{
+    width: 100%;
+}
+.options-modified form [for="custom period"]{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.options-modified form [for="custom period"] input{
+    width: 50%;
+}
+.options-modified form [for="custom period"] p{
+    width: 100%;
+}
+.options-modified form label select option{
+    color: rgba(96, 84, 84, 0.76);
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    
+}
+.options-modified form button:nth-child(1){
+    border: 1px solid rgba(96, 84, 84, 0.68);
+}
+.options-modified form .buttons{
+    margin-top: 30px;
+}
+@media (max-width: 560px){
+    .options-modified form{
+        display: block;
+    }
+    .options-modified::before{
+        left: 30px;
+    }
+    .options-modified form [for="custom period"] input{
+        flex-basis: 50%;
+    }
+    .options-modified{
+    margin-top: 0;
+
     }
 }
