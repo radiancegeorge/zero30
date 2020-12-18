@@ -914,6 +914,7 @@ td{
     padding: 10px 25px;
     background: white;
     cursor: pointer;
+    font-weight: 700;
 }
 @media (max-width:560px){
     .export-table button{
@@ -1056,4 +1057,32 @@ th{
 }
 .products .product-options div:nth-child(2){
     color: #CE1036;
+}
+.new-product .wrap{
+    width: 400px;
+    
+}
+.new-product .wrap h1{
+    text-align: left;
+}
+.new-product form label input{
+    flex-basis: 60%!important;
+    color: inherit;
+    min-width: 0!important;
+    border-radius: 3px;
+}
+.new-product form label select{
+    flex-basis: 38%!important;
+    border-radius: 3px;
+    color: inherit;
+    background: #F5F4F4;
+}
+.new-product form label p{
+    flex-basis: 100%!important;
+}
+.new-product form label{
+    justify-content: space-between;
+}
+.new-product form label:nth-child(1) input{
+    flex-basis: 100%!important;
 }
