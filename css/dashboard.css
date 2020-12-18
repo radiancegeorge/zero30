@@ -901,3 +901,23 @@ td{
         min-width: 100px;
     }
 }
+.transactions-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.export-table button{
+    color: #E85D00;
+    border: 1px solid #E85D00;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 25px;
+    background: white;
+    cursor: pointer;
+}
+@media (max-width:560px){
+    .export-table button{
+        padding: 5px 15px;
+        margin-right: 10px;
+    }
+}
