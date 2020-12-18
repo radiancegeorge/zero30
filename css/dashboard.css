@@ -1086,3 +1086,8 @@ th{
 .new-product form label:nth-child(1) input{
     flex-basis: 100%!important;
 }
+.products a{
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
