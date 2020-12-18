@@ -1031,7 +1031,7 @@ th{
     font-size: 20px;
 }
 .products table tr td{
-    padding: 10px inherit;
+    padding: 5px inherit;
     padding-right: 10px;
     /* min-width: 100px; */
     border-bottom-color: transparent;
