@@ -854,6 +854,50 @@ td{
 .add-custom-role h1{
     color: rgba(96, 84, 84, 0.76);
 }
-.add-custom-role{
-    /* overflow-y: scroll; */
+.transactions{
+    background: white;
+    padding: 10px 20px;
+
+}
+.transactions table{
+    width: 100%;
+    color: rgba(96, 84, 84, 0.68);
+    font-size: 14px;
+    font-family: Roboto;
+    border-collapse: collapse;
+    background: white;
+}
+.transactions table th{
+    font-weight: 700;
+    border-bottom:1px solid #E5E5E5;
+    padding: 15px 0;
+}
+.transactions table td{
+    border-bottom:1px solid #E5E5E5;
+    padding: 15px 0;
+}
+.transactions table span{
+    border: 7px solid rgba(96, 84, 84, 0.68);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    bottom: -2px;
+}
+.transactions table .paid{
+    color: #57A35A;
+}
+.transactions table .pending{
+    color: #FF6C32;
+}
+.transactions table .cancelled{
+    color: #D83B29;
+}
+@media (max-width: 560px){
+    .transactions{
+        overflow-x: scroll;
+    }
+    .transactions table td{
+        min-width: 100px;
+    }
 }
