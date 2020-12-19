@@ -1324,3 +1324,95 @@ th{
         flex-basis: 100%;
     }
 }
+.register-merchant .left, .register-merchant .right{
+    background: white;
+}
+.register-merchant .wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: Roboto;
+}
+.register-merchant .right{
+    flex-basis: 32%;
+    min-height: 20px;
+    padding: 10px;
+}
+.register-merchant .left{
+    flex-basis: 65%;
+}
+.register-merchant .left form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.register-merchant h1{
+    font-size: 14px;
+    padding: 20px;
+    border-bottom:1px solid #E5E5E5;
+    margin-top: 20px;
+}
+.register-merchant .left form label{
+    flex-basis: 48%;
+    margin: 10px 0;
+}
+.register-merchant form h1{
+    flex-basis: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.register-merchant form label p{
+    font-size: 14px;
+    font-size: normal;
+    color: inherit;
+    margin-bottom: 5px;
+}
+.register-merchant form label input, .register-merchant form label select{
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid rgba(96, 84, 84, 0.68);
+}
+.register-merchant .right h1{
+    margin: 0;
+    padding: 10px;
+}
+.register-merchant .right .drop-files{
+    min-height: 100px;
+    border: 1px solid #DADADA;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 30px auto 0 auto;
+    max-width: 85%;
+}
+.register-merchant .right .dimension{
+    padding: 10px 40px;
+    max-width: 85%;
+    color: white;
+    background: #A6CEE3;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+@media (max-width: 560px){
+    .register-merchant .left{
+        flex-basis: 100%;
+    }
+    .register-merchant .right{
+        flex-basis: 100%;
+    }
+    .register-merchant .wrap{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 469px){
+    .register-merchant .left form label{
+        flex-basis: 100%;
+    }
+}
