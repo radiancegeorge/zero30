@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>My Merchants</title>
+</head>
+<body>
+    <section class="main">
+        <nav>
+            <div class="cancel">+</div>
+            <div class="logo">
+                <img src="img/Rectangle 23.svg" alt="">
+                <img src="img/ZERO30.svg" alt="">
+            </div>
+            <div class="home-section">
+                <li>
+                    <a href="/">
+                        <img src="img/home.svg" alt="">
+                        Home
+                    </a>
+                    <a href="">
+                        <img src="img/person.png" alt="">
+                        My Profile
+                    </a>
+                    <a href="">
+                        <img src="img/calendar.svg" alt="">
+                        Transactions
+                    </a>
+                    <a href="">
+                        <img src="img/briefcase.svg" alt="">
+                        Products
+                    </a>
+                    <a href="">
+                        <img src="img/shopping_cart-24px (1) 1.svg" alt="">
+                        Quick Dispatch
+                    </a>
+                </li>
+            </div>
+            <div class="home-section merchants">
+                <h1>MERCHANTS</h1>
+                <li>
+                    <a href="">
+                        <img src="img/calendar.svg" alt="">
+                        Add Merchants
+                    </a>
+                    <a href="">
+                        <img src="img/briefcase.svg" alt="">
+                        My Merchants
+                    </a>
+                </li>
+            </div>
+            <div class="home-section riders">
+                <h1>Riders</h1>
+                <li>
+                    <a href="">
+                        <img src="img/calendar.svg" alt="">
+                        Register Riders
+                    </a>
+                    <a href="">
+                        <img src="img/briefcase.svg" alt="">
+                        My Riders
+                    </a>
+                </li>
+            </div>
+            <div class="home-section settings">
+                
+                    <a href="">
+                        <img src="img/Logout Copy 3.svg" alt="" width="25px">
+                        Settings
+                    </a>
+                </li>
+            </div>
+        </nav>
+
+
+        <!-- //dashboard body -->
+        <div class="main-body">
+            <div class="container">
+                <div class="options">
+                    <div class="wrap">
+                        <div class="burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="photo">
+                            <img src="img/persion-circle.svg" alt="">
+                        </div>
+                        <div class="more-option">
+                            <img src="img/Group 45.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-user search-section transactions-search">
+                    <form action="">
+                        <label for="filter">
+                            <select name="filter" id="filter" >
+                                <optgroup>Filter
+                                    <option value="default">Filter</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                        <label for="search">
+                            <input type="text" placeholder="Search">
+                        </label>
+                        
+                    </form>
+                    <div class="options-modified hide">
+                            <form action="">
+                                <label for="status">
+                                    <p>Status</p>
+                                    <select name="status" id="">
+                                        <option value="paid">Paid</option>
+                                    </select>
+                                </label>
+                                <label for="channel">
+                                    <p>Channel</p>
+                                    <select name="status" id="">
+                                        <option value="paid">Cash</option>
+                                    </select>
+                                </label>
+                                <label for="date period">
+                                    <p>Date Period</p>
+                                    <select name="status" id="">
+                                        <option value="paid">Today</option>
+                                    </select>
+                                </label>
+                                <label for="order id">
+                                    <p>Order ID</p>
+                                    <input type="text" required name="order_id" placeholder="Order ID">
+                                </label>
+                                <label for="custom period">
+                                    <p>Custom Period</p>
+                                    <input type="text" placeholder="Start Date" name="start_date"><input type="text" placeholder="End Date" name="end_date">
+                                </label>
+                                <div class="buttons">
+                                    <button type="reset"> Reset</button>
+                                    <button type="submit"> Filter</button>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="export-table add-product">
+                        <button>+ Add Products</button>
+                    </div>
+                </div>
+            </div>
+            <div class="other-section">
+            
+                <!-- boxes -->
+                <div class="container">
+                    <div class="wrap">
+                        <div class="transactions products">
+                            <table>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Category</th>
+                                    <th>In Stock</th>
+                                    <th>Sold</th>
+                                    <th>Revenue (N)</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><a href=''><img src="img/Rectangle 45.png" alt=""> 50cl Pepsi Drink </a></td>
+                                    <td>Grocery</td>
+                                    <td><span></span>Unlimited</td>
+                                    <td>120</td>
+                                    <td>2,200.00</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><img src="img/Rectangle 45.png" alt=""> 70g x 40 Indomie Noodles</a></td>
+                                    <td>Grocery</td>
+                                    <td><span></span>Unlimited</td>
+                                    <td>120</td>
+                                    <td>2,200.00</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><img src="img/Rectangle 45.png" alt=""> 50cl Pepsi Drink</a></td>
+                                    <td>Clothing</td>
+                                    <td><span></span>30</td>
+                                    <td>120</td>
+                                    <td>2,200.00</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><img src="img/Rectangle 45.png" alt=""> 70g x 40 Indomie Noodles</a></td>
+                                    <td>Fashion</td>
+                                    <td><span></span>20</td>
+                                    <td>120</td>
+                                    <td>2,200.00</td>
+                                    <td>... 
+                                        <div class="product-options">
+                                            <div class="duplicate">
+                                                Duplicate
+                                            </div>
+                                            <div class="delete">
+                                                Delete
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="add-user-content add-custom-role new-product hide">
+                <div class="wrap">
+                    <h1>New Product</h1>
+                    <form action="">
+                        <label for="name">
+                            <p>Name</p>
+                            <input type="text" required name="name" placeholder="The name of your product">
+                        </label>
+                        <label for="price">
+                            <p>Price</p>
+                            <select name="currency" id="">
+                                <option value="">NGN</option>
+                            </select>
+                            <input type="text" name="price">
+                        </label>
+                        <label for="quantity">
+                            <p>Quantity</p>
+                            <select name="quantity" id="">
+                                <option value="">Limited</option>
+                            </select>
+                            <input type="text" name="price">
+                        </label>
+                        <label for="variant">
+                            <p>Variant</p>
+                            <select name="quantity" id="">
+                                <option value="">Size</option>
+                            </select>
+                            <input type="text" name="price">
+                        </label>
+                        
+                        <div class="buttons">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/filter transactions.js"></script>
+    <script src="js/add products.js"></script>
+</body>
+</html>
