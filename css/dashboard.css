@@ -1121,7 +1121,7 @@ th{
 .carousel_description .carousel{
     flex-basis: 45%;
     border: 1px solid #E5E5E5;
-    padding: 15px;
+    /* padding: 15px; */
     display: flex;
     align-items: center;
     overflow-x: hidden;
@@ -1138,12 +1138,15 @@ th{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    overflow-x: hidden!important;
 }
 .carousel_description .carousel span{
-    padding: 20px;
+    padding: 2%;
     position: absolute;
     display: block;
     cursor: pointer;
+    z-index: 99;
+    max-width: 200px!important;
 }
 .carousel_description .carousel .left{
     left: 0;
@@ -1151,4 +1154,22 @@ th{
 }
 .carousel_description .carousel .right{
     right: 0;
+}
+.carousel_description .carousel span img{
+    width: 100%!important;
+}
+.carousel_description .carousel .circles{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.carousel_description .carousel .circles .dot{
+    border: 7px solid #DADADA;
+    border-radius: 50%;
+    min-width: 0;
+    margin: 0 2px;
 }
