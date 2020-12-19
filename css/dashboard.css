@@ -301,6 +301,7 @@ td{
         display: block;
         margin-right: auto;
         cursor: pointer;
+        order: -1;
     }
     .burger div{
         border: 2px solid black;
@@ -1117,6 +1118,7 @@ th{
     align-items: stretch;
     justify-content: space-between;
     background: white;
+    font-family: Roboto;
 }
 .carousel_description .carousel{
     flex-basis: 45%;
@@ -1172,4 +1174,107 @@ th{
     border-radius: 50%;
     min-width: 0;
     margin: 0 2px;
+}
+.carousel_description h1{
+    color: #605454;
+    font-size: 16px;
+    font-weight: 500;
+}
+.carousel_description .description textarea{
+    border: 1px solid transparent;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: normal;
+    width: 100%;
+}
+.carousel_description textarea::placeholder{
+    opacity: 0.8;
+}
+.carousel_description .description form button{
+    padding: 10px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Roboto;
+    background: #57A35A;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.carousel_description .description p{
+    margin: 10px 0;
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+} 
+.overview{
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: Roboto;
+}
+.overview h1{
+    font-size: 16px;
+    color:#605454;
+    margin-bottom: 20px;
+}
+.overview select{
+    background: #F5F4F4;
+    border: 1px solid #F5F4F4;
+    font-size: 14px;
+    padding: 10px 12px;
+    flex-basis: 100px;
+}
+.overview form label{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    color: rgba(96, 84, 84, 0.68);
+}
+.overview form input{
+    border: 1px solid #F5F4F4;
+    font-size: 14px;
+    padding: 10px 12px;
+    /* width: 100%; */
+    flex-basis: calc(100% - 100px);
+}
+.overview form label p{
+    flex-basis: 100px;
+}
+.overview form label:nth-child(2) input{
+    flex-basis: calc(100% - 200px);
+}
+.overview form {
+    max-width: 400px;
+}
+
+
+
+@media (max-width: 560px){
+    .carousel_description{
+        flex-wrap: wrap;
+    }
+    .carousel_description .carousel{
+        flex-basis: 100%;
+    }
+    .carousel_description .description{
+        flex-basis: 100%;
+    }
+    .overview form label{
+        flex-wrap: wrap;
+    }
+    .overview form label p{
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    .overview form input{
+        flex-basis: 100%;
+    }
+    .overview form label select{
+        flex-basis: 70px;
+    }
+    .overview form label:nth-child(2) input{
+        flex-basis: calc( 100% - 70px)!important;
+        /* background: yellow; */
+    }
 }
