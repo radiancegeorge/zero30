@@ -1389,6 +1389,7 @@ th{
     font-weight: normal;
     margin: 30px auto 0 auto;
     max-width: 85%;
+    transition: 0.3s;
 }
 .register-merchant .right .dimension{
     padding: 10px 40px;

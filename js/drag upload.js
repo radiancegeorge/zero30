@@ -8,6 +8,7 @@ window.addEventListener('load', e=>{
     events.forEach(event =>{
         uploadContainer.addEventListener(event, async e=>{
             e.preventDefault();
+            uploadContainer.style.backgroundColor = 'lightgrey'
             const files =  e.dataTransfer.files.length >= 1 && e.dataTransfer.files;
             if(files){
                 const allowedFiles = new Promise((resolve, reject)=>{
@@ -26,7 +27,10 @@ window.addEventListener('load', e=>{
                 //can do what you want with the files in selectedFiles array cheers!!
                 // console.log(selectedFiles);
             }
-        })
+        });
+    });
+    uploadContainer.addEventListener('dragleave', e=>{
+        uploadContainer.style.backgroundColor = ''
     })
     
 })
