@@ -1295,6 +1295,32 @@ th{
     }
     .overview form label:nth-child(2) input{
         flex-basis: calc( 100% - 70px)!important;
-        /* background: yellow; */
+    }
+}
+.quick-dispatch form select{ 
+    flex-basis: 100%;
+    color: inherit;
+}
+.quick-dispatch form input{
+    flex-basis: 100%;
+}
+.quick-dispatch form button{
+    margin-left: auto;
+    display: block;
+    padding: 10px 30px;
+}
+.quick-dispatch form{
+    /* padding: 20px; */
+}
+.quick-dispatch {
+    max-width: 500px;
+    border-radius: 10px;
+}
+.quick-dispatch form label{
+    padding: 10px 20px;
+}
+@media (max-width: 560px){
+    .quick-dispatch form label select{
+        flex-basis: 100%;
     }
 }
