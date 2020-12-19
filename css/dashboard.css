@@ -1417,3 +1417,31 @@ th{
         flex-basis: 100%;
     }
 }
+.riders-view table tr td span{
+    border: 5px solid green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.inactive{
+    border-color: #DADADA!important;
+}
+.riders-view h1{
+    text-align: left;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+}
+@media (max-width: 560px){
+    .riders-view table td{
+        min-width: 100px;
+        padding-right: 10px;
+    }
+    .riders-view table td:nth-child(1){
+        min-width: 50px;
+    }
+    .riders-view .roles{
+        margin-left: auto!important;
+    }
+}
