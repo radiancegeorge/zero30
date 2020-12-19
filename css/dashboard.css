@@ -1125,6 +1125,7 @@ th{
     display: flex;
     align-items: center;
     overflow-x: hidden;
+    position: relative;
 }
 .carousel_description .description{
     flex-basis: 55%;
@@ -1137,4 +1138,17 @@ th{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+}
+.carousel_description .carousel span{
+    padding: 20px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+.carousel_description .carousel .left{
+    left: 0;
+    color: green;
+}
+.carousel_description .carousel .right{
+    right: 0;
 }
