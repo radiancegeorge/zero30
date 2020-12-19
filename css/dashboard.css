@@ -1091,3 +1091,50 @@ th{
     display: flex;
     align-items: center;
 }
+.options .product-id{
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #605454;
+}
+.product-name p{
+    font-size: 16px;
+    font-family: Roboto;
+    width: fit-content;
+    color: #605454;
+    /* margin-left: -20px; */
+}
+.product-name{
+    margin-left: 0;
+}
+.carousel_description .carousel img{
+    width: 250px;
+    height: 100%;
+}
+.carousel_description{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background: white;
+}
+.carousel_description .carousel{
+    flex-basis: 45%;
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.carousel_description .description{
+    flex-basis: 55%;
+    padding: 15px;
+    border: 1px solid #E5E5E5;
+}
+.carousel_description .carousel div{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
