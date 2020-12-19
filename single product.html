@@ -141,7 +141,9 @@
                             </label>
                             <label for="in stock">
                                 <p>In stock</p>
-                                <select name="" id=""></select>
+                                <select name="" id="">
+                                    <!-- <option value="">text</option> -->
+                                </select>
                                 <input type="number" name="in_stock">
                             </label>
                             <label for="min order">
@@ -152,6 +154,14 @@
                                 <p>Max Order</p>
                                 <input type="text" name="max_order">
                             </label>
+                            <label class="active" for="active">
+                                <p>Active</p>
+                                <input style="display: none;" type="radio" name="active">
+                                <div class="rect">
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                            <button type="submit">Save Changes</button>
                         </form>
                     </div>
                 </div>

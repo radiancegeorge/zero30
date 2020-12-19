@@ -79,7 +79,7 @@ window.addEventListener('load', e =>{
                     image.style.transition = '0s';
                     imageIndex = counter;
                     image.style.transform = `translateX(${imageIndex *- width}px)`;
-                }, 500);
+                }, 400);
             }
         })
         console.log('done');
@@ -98,7 +98,7 @@ window.addEventListener('load', e =>{
                     image.style.transition = '0s';
                     imageIndex = 0;
                     image.style.transform = `translateX(${imageIndex *- width}px)`;
-                }, 500);
+                }, 400);
             }
         });
         
@@ -124,6 +124,20 @@ window.addEventListener('load', e =>{
         })
 
     }, 500);
+
+
+
+
+
+
+    //ccustom switch section
+
+    const radioButton = document.querySelector('.overview .active [type="radio"]');
+    const customSwitch = document.querySelector('.overview .active .rect');
+    customSwitch.addEventListener('click', e =>{
+        customSwitch.classList.toggle('on');
+        radioButton.checked = !radioButton.checked
+    })
 });
 
 //finish !!!!!

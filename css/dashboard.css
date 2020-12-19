@@ -1191,7 +1191,7 @@ th{
 .carousel_description textarea::placeholder{
     opacity: 0.8;
 }
-.carousel_description .description form button{
+.carousel_description .description form button, .overview form button{
     padding: 10px 15px;
     color: white;
     font-size: 14px;
@@ -1247,9 +1247,29 @@ th{
 .overview form {
     max-width: 400px;
 }
-
-
-
+.overview form .rect{
+    background: #C4C4C4;
+    border-radius: 20px;
+    padding: 4px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.overview form .circle{
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.overview form .on{
+    background: #57A35A;
+    justify-content: flex-end;
+}
+.overview form button{
+    margin: 20px 0;
+}
 @media (max-width: 560px){
     .carousel_description{
         flex-wrap: wrap;
