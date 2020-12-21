@@ -216,8 +216,11 @@ table{
     color :#4E4E4E;
     font-size: 14px;
     width: 100%;
-    border-spacing: 15px;
+    /* border-spacing: 5px!important; */
     text-align: left;
+    box-sizing: border-box;
+    align-items: center;
+    /* border-collapse: collapse!important; */
 }
 
 th{
@@ -226,18 +229,26 @@ th{
 }
 td{
     font-size: 14px;
+    margin: 10px 0;
 }
-.orders-section .ongoing-orders table td:nth-child(7){
+tr{
+    align-items: center!important;
+}
+
+.orders-section .ongoing-orders-table td:nth-child(7) span{
     background: #57A35A;
     color: white;
     border-radius: 10px;
-    padding:2px 10px;
+    padding: 2px 10px;
+    display: block;
+    min-width: 100px;
 }
 .pending-orders{
     margin: 1rem 0;
 }
-.pending-orders table{
+.pending-orders table, .ongoing-orders-table{
     width: 90%;
+    margin-top: 20px!important;
 }
 .pending-orders h1{
     color: #FF4B23!important;
@@ -248,10 +259,10 @@ td{
     /* padding: 10px */
     box-shadow:  0px 4px 4px 0px lightgrey;
     position: absolute;
-    /* z-index: 99; */
+    z-index: 99;
     background: white;
-    right: 5%;
-    margin-top: 6%;
+    right: 0!important;
+    top: 0!important;
 }
 .item-option li{
     display: flex;
@@ -269,7 +280,8 @@ td{
     background: lightgrey;
 }
 .pending-orders .item-option{
-    right: 15%;
+    right: 0;
+    top: 0;
 }
 .item-option li:nth-child(2){
     color: red;
@@ -1494,4 +1506,21 @@ th{
         top: 45px;
         right: 0;
     }
+}
+.dataTables_wrapper{
+    margin: 30px 0;
+}
+.dataTables_length{
+    padding-bottom: 20px;
+}
+
+.dataTable tbody td:nth-child(7) {
+    padding: 2px 10px!important;
+}
+td{
+    position: relative;
+}
+thead th{
+    text-align: left;
+    padding: 0 5px!important;
 }

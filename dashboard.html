@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+
     <title>Dashboard</title>
+    
 </head>
 <body>
     <section class="main">
@@ -152,70 +155,78 @@
                     <div class="orders-section">
                         <div class="ongoing-orders">
                             <h1>Ongoing Orders</h1>
-                            <table>
-                                <tr>
-                                    <th>SN</th>
-                                    <th>Order Id</th>
-                                    <th>Customer Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Amount</th>
-                                    <th>Status</th>
-                                    <th>Rider</th>
-                                    <th>Transaction Date</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Paid</td>
-                                    <td>Devin Stone</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Paid</td>
-                                    <td>Devin Stone</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                                    <div class="item-option">
-                                        <ul>
-                                            <li>Detail <img src="img/diagonal-arrow-right-up.svg" alt=""></li>
-                                            <li>Cancel <img src="img/Close.svg" alt=""></li>
-                                        </ul>
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Paid</td>
-                                    <td>Devin Stone</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Paid</td>
-                                    <td>Devin Stone</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                                </tr>
+                            <table class="ongoing-orders-table" data-order='[[ 1, "asc" ]]' data-page-length='10'>
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Order Id</th>
+                                        <th>Customer Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Rider</th>
+                                        <th>Transaction Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Paid</td>
+                                        <td><span>Devin Stone</span></td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Paid</td>
+                                        <td><span>Devin Stone</span></td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...
+                                            <div class="item-option">
+                                                <ul>
+                                                    <li>Detail <img src="img/diagonal-arrow-right-up.svg" alt=""></li>
+                                                    <li>Cancel <img src="img/Close.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Paid</td>
+                                        <td><span>Devin Stone</span></td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Paid</td>
+                                        <td><span>Devin Stone</span></td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                                    </tr>
+                                </tbody>
+                                
                             </table>
                         </div>
 
@@ -223,66 +234,72 @@
                         <!-- pending -->
                         <div class="pending-orders">
                             <h1>Pending Orders</h1>
-                            <table>
-                                <tr>
-                                    <th>SN</th>
-                                    <th>Order Id</th>
-                                    <th>Customer Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Amount</th>
-                                    <th>Status</th>
-                                    <th>Transaction Date</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Not Paid</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Not Paid</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Not Paid</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                    
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>43e2120H</td>
-                                    <td>Chioma Akpu</td>
-                                    <td>08138544036</td>
-                                    <td>3,100.00</td>
-                                    <td>Not Paid</td>
-                                    <td>Nov 11, 2020  11:15AM</td>
-                                    <td>...</td>
-                                    <div class="item-option">
-                                        <ul>
-                                            <li>Dispatch <img src="img/diagonal-arrow-right-up.svg" alt=""></li>
-                                            <li>Cancel <img src="img/Close.svg" alt=""></li>
-                                        </ul>
-                                    </div>
-                                </tr>
+                            <table class="pending-orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Order Id</th>
+                                        <th>Customer Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Transaction Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Not Paid</td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Not Paid</td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Not Paid</td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...</td>
+                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>43e2120H</td>
+                                        <td>Chioma Akpu</td>
+                                        <td>08138544036</td>
+                                        <td>3,100.00</td>
+                                        <td>Not Paid</td>
+                                        <td>Nov 11, 2020  11:15AM</td>
+                                        <td>...
+                                            <div class="item-option">
+                                                <ul>
+                                                    <li>Dispatch <img src="img/diagonal-arrow-right-up.svg" alt=""></li>
+                                                    <li>Cancel <img src="img/Close.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -292,8 +309,11 @@
 
     </section>
 
-
+    <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
     <script src="js/option-menu.js"></script>
+    <script src="js/data table.js"></script>
+  
+<script type="text/javascript" charset="utf8" src="js/jqueryDataTable.js"></script>
 </body>
 </html>
