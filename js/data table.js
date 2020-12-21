@@ -39,5 +39,21 @@ window.addEventListener('load', e=>{
             select: false
         })
     };
+    if($('.my-merchants')){
+        const table = $('.my-merchants');
+        table.DataTable({
+            searching: false,
+            ordering: false,
+            select: false
+        })
+    };
+    if($('.manage-riders')){
+        const table = $('.manage-riders');
+        table.DataTable({
+            searching: false,
+            ordering: false,
+            select: false
+        })
+    };
 
 })
