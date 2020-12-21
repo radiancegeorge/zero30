@@ -1452,3 +1452,10 @@ th{
     margin-bottom: 80px;
 
 }
+.merchant .logo{
+    display: block;
+}
+.merchant .logo p{
+    padding: 0 20px 20px 20px;
+    margin-top: 0px;
+}
