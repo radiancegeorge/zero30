@@ -1459,3 +1459,39 @@ th{
     padding: 0 20px 20px 20px;
     margin-top: 0px;
 }
+
+.option-profile-menu{
+    position: absolute;
+    right: 10px;
+    background: white;
+    padding: 20px;
+    top: 60px;
+    z-index: 90;
+    min-width: 200px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Roboto;
+    color: grey;
+    background:  #F5F4F4;
+    transition: 0.3s;
+}
+.option-profile-menu::after{
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-bottom-color:  #F5F4F4;
+    right: 20px;
+    top: -20px;
+}
+.option-profile-menu ul li{
+    border-bottom-color: 1px solid  grey;
+}
+.option-profile-menu ul li a{
+    color: inherit;
+}
+@media (max-width: 560px){
+    .option-profile-menu{
+        top: 40px;
+        right: 0;
+    }
+}
