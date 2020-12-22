@@ -67,47 +67,49 @@ window.addEventListener('load', e =>{
 
 
 
-    buttons[0].addEventListener('click', e =>{
-        // console.log(buttons[0])
-        imageIndex <= 0 ? imageIndex = counter -1 : imageIndex -= 1;
-
-        imagesBox.forEach(image =>{
-            image.style.transform = `translateX(${imageIndex *- width}px)`;
-            console.log(imageIndex);
-            if(imageIndex === 0){
-                setTimeout(() => {
-                    image.style.transition = '0s';
-                    imageIndex = counter;
-                    image.style.transform = `translateX(${imageIndex *- width}px)`;
-                }, 400);
-            }
-        })
-        console.log('done');
-        imagesBox.forEach(image =>{
-            image.style.transition = '0.3s'
-        })
-    });
-
-    buttons[1].addEventListener('click', e =>{
-        imageIndex >= counter ? imageIndex = 0 : imageIndex += 1;
-        imagesBox.forEach(image =>{
-            image.style.transform = `translateX(${imageIndex *- width}px)`;
-            console.log(imageIndex);
-            if(imageIndex === counter){
-                setTimeout(() => {
-                    image.style.transition = '0s';
-                    imageIndex = 0;
-                    image.style.transform = `translateX(${imageIndex *- width}px)`;
-                }, 400);
-            }
+    if(buttons.length >= 1){
+        buttons[0].addEventListener('click', e =>{
+            // console.log(buttons[0])
+            imageIndex <= 0 ? imageIndex = counter -1 : imageIndex -= 1;
+    
+            imagesBox.forEach(image =>{
+                image.style.transform = `translateX(${imageIndex *- width}px)`;
+                console.log(imageIndex);
+                if(imageIndex === 0){
+                    setTimeout(() => {
+                        image.style.transition = '0s';
+                        imageIndex = counter;
+                        image.style.transform = `translateX(${imageIndex *- width}px)`;
+                    }, 400);
+                }
+            })
+            console.log('done');
+            imagesBox.forEach(image =>{
+                image.style.transition = '0.3s'
+            })
         });
-        
-        imagesBox.forEach(image =>{
-            image.style.transition = '0.3s'
-        })
-
-        console.log('done')
-    });
+    
+        buttons[1].addEventListener('click', e =>{
+            imageIndex >= counter ? imageIndex = 0 : imageIndex += 1;
+            imagesBox.forEach(image =>{
+                image.style.transform = `translateX(${imageIndex *- width}px)`;
+                console.log(imageIndex);
+                if(imageIndex === counter){
+                    setTimeout(() => {
+                        image.style.transition = '0s';
+                        imageIndex = 0;
+                        image.style.transform = `translateX(${imageIndex *- width}px)`;
+                    }, 400);
+                }
+            });
+            
+            imagesBox.forEach(image =>{
+                image.style.transition = '0.3s'
+            })
+    
+            console.log('done')
+        });
+    }
 
     for(let i = 1; i < lengthOfImages; i++){
         const dot = document.createElement('div');

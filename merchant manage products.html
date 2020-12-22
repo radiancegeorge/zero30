@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>merchant manage Product</title>
+</head>
+<body>
+    <section class="main merchant">
+        <nav>
+            <div class="cancel">+</div>
+            <div class="logo" >
+                <img src="img/image2.png" alt="">
+                <p >Logo</p>
+            </div>
+            <div class="home-section">
+                <li>
+                    <a href="/">
+                        <img src="img/home.svg" alt="">
+                        Home
+                    </a>
+                    <a href="">
+                        <img src="img/person.png" alt="">
+                        My Profile
+                    </a>
+                </li>
+            </div>
+            <div class="home-section merchants">
+                <h1>STORE</h1>
+                <li>
+                    <a href="">
+                        <img src="img/calendar.svg" alt="">
+                        Transactions
+                    </a>
+                    <a href="">
+                        <img src="img/briefcase.svg" alt="">
+                        Products
+                    </a>
+                    <a href="">
+                        <img src="img/shopping_cart-24px (1) 1.svg" alt="">
+                        Orders
+                    </a>
+                </li>
+            </div>
+            
+            <div class="home-section settings">
+                
+                    <a href="">
+                        <img src="img/Logout Copy 3.svg" alt="" width="25px">
+                        Settings
+                    </a>
+                </li>
+            </div>
+        </nav>
+
+
+        <!-- //dashboard body -->
+        <div class="main-body">
+            <div class="container">
+                <div class="options">
+                    
+                    <div class="wrap">
+                        <div class="product-id">
+                            <p>Product - 221</p>
+                        </div>
+                        <div class="burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="photo">
+                            <img src="img/persion-circle.svg" alt="">
+                        </div>
+                        <div class="more-option">
+                            <img src="img/Group 45.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-user search-section product-name">
+                    <p> 70g x 40 indomie</p>
+                </div>
+                <div class="search-section profile-section merchant-search">
+                    <ul>
+                        <li><a href="">Orders</a></li>
+                        <li class="active"><a href="">Manage Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-section">
+            
+                <!-- boxes -->
+                <div class="container">
+                    <div class="wrap">
+                        <div class="carousel_description merchant-product-image">
+                            <div class="carousel">
+                                <div class="img"><img src="img/image.svg" alt=""></div>
+                                <div class="if-no-image">
+                                    Add product photos
+                                </div>
+                            </div>
+                            <div class="description">
+                                <h1>Description <span><img src="img/edit-fill.svg" alt=""></span></h1>
+                                <form action="">
+                                    <textarea name="description" id="" cols="30" rows="10"  placeholder="Describe your product"></textarea>
+
+                                    <button type="submit" class="createBtn">Add option</button>
+                                </form>
+                                <p>Set up multiple options for your product (e.g Size, Colour)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <h1>Overview</h1>
+                        <form action="">
+                            <label for="price">
+                                <p>Price</p>
+                                <input type="text" name="price">
+                            </label>
+                            <label for="in stock">
+                                <p>In stock</p>
+                                <select name="" id="">
+                                    <option value="">Limited</option>
+                                </select>
+                                <input type="number" name="in_stock" placeholder="20" >
+                            </label>
+                            <label for="min order">
+                                <p>Min Order</p>
+                                <input type="text" name="min_order">
+                            </label>
+                            <label for="max order">
+                                <p>Max Order</p>
+                                <input type="text" name="max_order">
+                            </label>
+                            <label class="active" for="active">
+                                <p>Active</p>
+                                <input style="display: none;" type="radio" name="active">
+                                <div class="rect">
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                            <button type="submit" class="primary-background">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/product carousel.js"></script>
+</body>
+</html>

@@ -1591,3 +1591,34 @@ thead th{
 .merchant-product .wrap{
     box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25)!important;
 }
+.merchant-product-image .carousel img{
+    width: 100%;
+}
+.merchant-product-image .carousel{
+    background: lightgrey;
+    font-size: 16px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.merchant-product-image .carousel [src="img/image.svg"]{
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.merchant-product-image form button{
+    background: rgba(232, 93, 0, 0.8)!important;
+}
+.primary-background{
+    background:  rgba(232, 93, 0, 0.8)!important;
+}
+select{
+    color: rgba(0,0,0,0.6);
+}
+.merchant-search{
+    margin-left: 0;
+    padding-top: 20px;
+}
+.merchant-search li:nth-child(1){
+    padding-left: 0;
+}
