@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
-    <title>Products</title>
+    <title>merchant Products</title>
 </head>
 <body>
-    <section class="main merchant" style="font-family: Roboto;">
+    <section class="main merchant">
         <nav>
             <div class="cancel">+</div>
             <div class="logo" >
@@ -131,22 +131,69 @@
                 <!-- boxes -->
                 <div class="container">
                     <div class="wrap">
-                        <!-- <div class="transactions products">
-                            should be a table in here i guess
-                        </div> -->
-                        <div class="no-data-message">
-                            <p>The fastest way to start selling</p>
-                            <span>Add a product, manage orders and inventory</span>
-                            <button class="createBtn add-product">
-                                +New Product
-                            </button>
+                        <div class="transactions products">
+                            <table class="merchant-products">
+                                <thead>
+                                    <tr>
+                                        <th>Item Name</th>
+                                        <th>Category</th>
+                                        <th>In Stock</th>
+                                        <th>Sold</th>
+                                        <th>Revenue (N)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href=''><img src="img/Rectangle 45.png" alt=""> 50cl Pepsi Drink </a></td>
+                                        <td>Grocery</td>
+                                        <td><span></span>Unlimited</td>
+                                        <td>120</td>
+                                        <td>2,200.00</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="img/Rectangle 45.png" alt=""> 70g x 40 Indomie Noodles</a></td>
+                                        <td>Grocery</td>
+                                        <td><span></span>Unlimited</td>
+                                        <td>120</td>
+                                        <td>2,200.00</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="img/Rectangle 45.png" alt=""> 50cl Pepsi Drink</a></td>
+                                        <td>Clothing</td>
+                                        <td><span></span>30</td>
+                                        <td>120</td>
+                                        <td>2,200.00</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="img/Rectangle 45.png" alt=""> 70g x 40 Indomie Noodles</a></td>
+                                        <td>Fashion</td>
+                                        <td><span></span>20</td>
+                                        <td>120</td>
+                                        <td>2,200.00</td>
+                                        <td>... 
+                                            <div class="product-options">
+                                                <div class="duplicate">
+                                                    Duplicate
+                                                </div>
+                                                <div class="delete">
+                                                    Delete
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- modal -->
-            <div class="add-user-content add-custom-role new-product hide merchant-product">
+            <div class="add-user-content add-custom-role new-product hide">
                 <div class="wrap">
                     <h1>New Product</h1>
                     <form action="">

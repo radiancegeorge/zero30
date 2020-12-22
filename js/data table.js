@@ -63,5 +63,13 @@ window.addEventListener('load', e=>{
             select: false
         })
     };
+    if($('.merchant-products')){
+        const table = $('.merchant-products');
+        table.DataTable({
+            searching: false,
+            ordering: false,
+            select: false
+        })
+    };
 
 })
