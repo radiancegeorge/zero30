@@ -55,5 +55,13 @@ window.addEventListener('load', e=>{
             select: false
         })
     };
+    if($('.merchant-user-table')){
+        const table = $('.merchant-user-table');
+        table.DataTable({
+            searching: false,
+            ordering: false,
+            select: false
+        })
+    };
 
 })

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
-    <title>Dashboard</title>
+    <title>Merchant Dashboard</title>
 </head>
 <body>
-    <section class="main merchant">
+    <section class="main merchant" style="font-family: Roboto;">
         <nav>
             <div class="cancel">+</div>
             <div class="logo" >
                 <img src="img/image2.png" alt="">
-                <p >Logo</p> 
+                <p >Logo</p>
             </div>
             <div class="home-section">
                 <li>
@@ -71,66 +71,42 @@
                         <div class="more-option">
                             <img src="img/Group 45.svg" alt="">
                         </div>
-
-                        <!-- menu at profile photo -->
-                        <div class="option-profile-menu hide">
-                            <ul>
-                                <li><a href="">Logout</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-                <div class="profile-user search-section">
-                    <form action="">
-                        <label for="filter">
-                            <select name="filter" id="filter" >
-                                <optgroup>Filter
-                                    <option value="default">Filter</option>
-                                </optgroup>
-                            </select>
-                        </label>
-                        <label for="search">
-                            <input type="text" placeholder="Search">
-                        </label>
-                    </form>
+                <div class="search-section profile-section">
+                    <ul>
+                        <li class="active"><a href="">Profile</a></li>
+                        <li><a href="">Users</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="other-section">
             
                 <!-- boxes -->
                 <div class="container">
-                    <div class="box-container box-merchant">
-                        <div class="box">
-                            <p class="amount">
-                                9
-                                <span>New Order(s)</span>
-                            </p>
-                            <div class="colored-line"></div>
+                    <div class="profile-detail-content">
+                        <div class="wrap">
+                            <h1>Your Profile</h1>
+                            <form action="">
+                                <label for="full_name">
+                                    <p>Full Name</p>
+                                    <input type="text" placeholder="Joy Obinaba" name="full_name">
+                                </label>
+                                <label for="Email">
+                                    <p>Email</p>
+                                    <input type="text" placeholder=".........@gmail.com" name="email">
+                                </label>
+                                <label for="number">
+                                    <p>Phone No</p>
+                                    <span class="country"><img src="img/Nigeria 1.png" alt="" width="100%">+234</span><input type="tel" placeholder="Mobile Number">
+                                </label>
+                                <label for="">
+                                    <p>Password</p>
+                                    <a href="">Change Password</a>
+                                </label>
+                                <button>Save Changes</button>
+                            </form>
                         </div>
-                        <div class="box">
-                            <p class="amount">
-                                1227
-                                <span>Total Products</span>
-                            </p>
-                            <div class="colored-line"></div>
-                        </div>
-                        <div class="box">
-                            <p class="amount">
-                                NGN 311, 500.00
-                                <span>Total Revenue</span>
-                            </p>
-                            <div class="colored-line"></div>
-                        </div>
-                        <div class="box">
-                            <p class="amount">
-                                5
-                                <span>Customers</span>
-                            </p>
-                            <div class="colored-line"></div>
-                        </div>
-                    </div>
-                    <div class="wrap-chart">
-                        <canvas></canvas>
                     </div>
                 </div>
             </div>
@@ -140,8 +116,5 @@
 
 
     <script src="js/index.js"></script>
-    <script src="js/chart.js"></script>
-    <script type="module" src="js/merchant chart.js"></script>
-    <script src="js/option-menu.js"></script>
 </body>
 </html>

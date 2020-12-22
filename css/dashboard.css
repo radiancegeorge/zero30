@@ -1470,6 +1470,7 @@ th{
 .merchant .logo p{
     padding: 0 20px 20px 20px;
     margin-top: 0px;
+    color: white;
 }
 
 .option-profile-menu{
@@ -1533,4 +1534,53 @@ thead th{
     padding: 20px 0;
     color: rgba(96, 84, 84, 0.68);
     font-family: Roboto;
+}
+.cancelBtn, .createBtn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: Roboto;
+    font-size: 14px;
+    width: fit-content;
+    color:rgba(96, 84, 84, 0.68);
+    margin: 20px 0;
+
+}
+.createBtn{
+    color: white;
+    background: rgba(232, 93, 0, 0.8);
+    border: 1px solid transparent;
+}
+.cancelBtn{
+    border: 1px solid #C4C4C4;
+    background: #F5F4F4;
+}
+.submitBtn{
+    background: #57A35A;
+    color: white;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 15px;
+    border: 1px solid #E5E5E5;
+}
+.no-data-message{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.no-data-message p{
+    font-size: 16px;
+}
+.no-data-message span{
+    color:rgba(96, 84, 84, 0.68);
+    font-size: 14px;
+    margin: 20px 0;
+}
+.no-data-message button{
+    border:1px solid #E85D00;
+    color: #E85D00;
+    background: white;
 }
