@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>merchant Orders</title>
+</head>
+<body>
+    <section class="main merchant">
+        <nav>
+            <div class="cancel">+</div>
+            <div class="logo" >
+                <img src="img/image2.png" alt="">
+                <p >Logo</p>
+            </div>
+            <div class="home-section">
+                <li>
+                    <a href="/">
+                        <img src="img/home.svg" alt="">
+                        Home
+                    </a>
+                    <a href="">
+                        <img src="img/person.png" alt="">
+                        My Profile
+                    </a>
+                </li>
+            </div>
+            <div class="home-section merchants">
+                <h1>STORE</h1>
+                <li>
+                    <a href="">
+                        <img src="img/calendar.svg" alt="">
+                        Transactions
+                    </a>
+                    <a href="">
+                        <img src="img/briefcase.svg" alt="">
+                        Products
+                    </a>
+                    <a href="">
+                        <img src="img/shopping_cart-24px (1) 1.svg" alt="">
+                        Orders
+                    </a>
+                </li>
+            </div>
+            
+            <div class="home-section settings">
+                
+                    <a href="">
+                        <img src="img/Logout Copy 3.svg" alt="" width="25px">
+                        Settings
+                    </a>
+                </li>
+            </div>
+        </nav>
+
+
+        <!-- //dashboard body -->
+        <div class="main-body">
+            <div class="container">
+                <div class="options">
+                    
+                    <div class="wrap">
+                        <div class="product-id">
+                            <p>Product - 221</p>
+                        </div>
+                        <div class="burger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="photo">
+                            <img src="img/persion-circle.svg" alt="">
+                        </div>
+                        <div class="more-option">
+                            <img src="img/Group 45.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-user search-section product-name">
+                    <p> 70g x 40 indomie</p>
+                </div>
+                <div class="search-section profile-section merchant-search">
+                    <ul>
+                        <li class="active"><a href="">Orders</a></li>
+                        <li class=""><a href="">Manage Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-section orders">
+            
+                <!-- boxes -->
+                <div class="container">
+                    <div class="wrap">
+                        <div class="left">
+                            <div class="export-table add-product">
+                                <button class="cancelBtn">Export</button>
+                            </div>
+                            <div class="profile-user search-section transactions-search orders-filter">
+                                <form action="" class="top-opt">
+                                    <label for="filter">
+                                        <select name="filter" id="filter" >
+                                            <optgroup>Filter
+                                                <option value="default">Filter</option>
+                                            </optgroup>
+                                        </select>
+                                    </label>
+                                    <label for="search">
+                                        <input type="text" placeholder="Search">
+                                    </label>
+                                    
+                                </form>
+                                <div class="options-modified hide">
+                                    
+                                        <form action="" class="filter">
+                                            <label for="status">
+                                                <p>Status</p>
+                                                <select name="status" id="">
+                                                    <option value="paid">Paid</option>
+                                                </select>
+                                            </label>
+                                            <label for="channel">
+                                                <p>Channel</p>
+                                                <select name="status" id="">
+                                                    <option value="paid">Cash</option>
+                                                </select>
+                                            </label>
+                                            <label for="date period">
+                                                <p>Date Period</p>
+                                                <select name="status" id="">
+                                                    <option value="paid">Today</option>
+                                                </select>
+                                            </label>
+                                            <label for="order id">
+                                                <p>Order ID</p>
+                                                <input type="text" required name="order_id" placeholder="Order ID">
+                                            </label>
+                                            <label for="custom period">
+                                                <p>Custom Period</p>
+                                                <input type="text" placeholder="Start Date" name="start_date"><input type="text" placeholder="End Date" name="end_date">
+                                            </label>
+                                            <div class="buttons">
+                                                <button type="reset"> Reset</button>
+                                                <button type="submit"> Filter</button>
+                                            </div>
+                                        </form>
+                                </div>
+                                
+                            </div>
+                            <table class="merchant-orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Order ID</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    
+                                </thead>
+                            </table>
+                            <div class="no-data">
+                                <p>No orders yet</p>
+                                <span>This is where you will see your orders as they come in</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="unit-sold">
+                                <h4>Units Sold</h4>
+                                <span>0</span>
+                            </div>
+                            <div class="revenue">
+                                <h4>Revenue</h4>
+                                <span>NGN</span>
+                                <span>0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/filter transactions.js"></script>
+    <!-- <script src="js/product carousel.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/jqueryDataTable.js"></script>
+    <script src="js/data table.js"></script>
+</body>
+</html>

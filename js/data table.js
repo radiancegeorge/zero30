@@ -71,5 +71,13 @@ window.addEventListener('load', e=>{
             select: false
         })
     };
+    if($('.merchant-orders-table')){
+        const table = $('.merchant-orders-table');
+        table.DataTable({
+            searching: false,
+            ordering: false,
+            select: false
+        })
+    };
 
 })

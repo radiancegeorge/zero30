@@ -109,7 +109,7 @@ nav .logo:after{
     /* position: relative; */
 }
 .search-section{
-    padding-top: 10px;
+    padding-top: 20px;
     margin-left: 20px;
 }
 .search-section label input, .search-section label select{
@@ -1552,8 +1552,9 @@ thead th{
     border: 1px solid transparent;
 }
 .cancelBtn{
-    border: 1px solid #C4C4C4;
-    background: #F5F4F4;
+    border: 1px solid #C4C4C4!important;
+    background: #F5F4F4!important;
+    color: grey!important;
 }
 .submitBtn{
     background: #57A35A;
@@ -1621,4 +1622,105 @@ select{
 }
 .merchant-search li:nth-child(1){
     padding-left: 0;
+}
+.orders .wrap{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.orders .wrap > div{
+    flex-basis: 50%;
+}
+.orders .wrap > div:nth-child(1){
+    background: white;
+    padding: 20px;
+}
+.orders .container{
+    padding: 0 ;
+}
+.orders .wrap > div:nth-child(1) .top-opt{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.orders .wrap .left .add-product{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.orders .wrap .left .cancelBtn{
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.orders .left [for="filter"]{
+    margin-right: 10px!important;
+    /* background: #000; */
+}
+.orders .left .top-opt input{
+    max-width: 240px!important;
+}
+.orders-filter{
+    margin-left: 0;
+}
+.orders .filter{
+    display: block!important;
+}
+.orders .options-modified{
+    margin-top: 45px;
+}
+.orders table{
+    margin: 20px 0;
+    font-weight: normal;
+}
+.orders tr{
+    color: rgba(96, 84, 84, 0.68);
+}
+.orders th{
+    font-weight: normal;
+
+}
+.orders .no-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-family: Roboto;
+    min-height: 300px;
+    font-size: 14px;
+    text-align: center;
+}
+.orders span{
+    font-size: 14px;
+    color: rgba(96, 84, 84, 0.68);
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.orders .right{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    font-family: Roboto;
+    text-align: left!important;
+
+}
+.orders .right div{
+    padding: 40px 20px;
+}
+.orders .right div span{
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+@media (max-width: 560px){
+    .orders .wrap .left{
+        flex-basis: 100%;
+    }
+    .orders .wrap .right{
+        flex-basis: 100%;
+    }
 }
