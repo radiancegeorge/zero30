@@ -483,4 +483,11 @@ header form button{
     border-radius: 8px;
     width: fit-content;
     font-size: 14px;
+
+}
+.wrong-password > div{
+    width: fit-content!important;
+    height: fit-content!important;
+    padding: 0!important;
+    margin: 0!important;
 }

@@ -1518,6 +1518,7 @@ th{
     font-family: Roboto;
 }
 
+
 .dataTable tbody td:nth-child(7) {
     padding: 2px 10px!important;
 }
@@ -1723,5 +1724,10 @@ select{
     }
     .orders .wrap .right{
         flex-basis: 100%;
+    }
+    .dataTables_length{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
