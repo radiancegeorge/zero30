@@ -191,6 +191,7 @@ nav .logo:after{
     /* padding: 20px; */
 }
 .container{
+    margin: 0;
     padding: 20px;
     margin-left: auto;
     max-width: 84vw;
