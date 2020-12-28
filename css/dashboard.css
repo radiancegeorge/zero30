@@ -1424,10 +1424,22 @@ th{
     .register-merchant .wrap{
         flex-wrap: wrap;
     }
+    .rider-register .left{
+        flex-basis: 100%;
+    }
+    .rider-register .right{
+        flex-basis: 100%!important;
+    }
+    .rider-register .wrap{
+        flex-wrap: wrap!important;
+    }
 }
 @media (max-width: 469px){
     .register-merchant .left form label{
         flex-basis: 100%;
+    }
+    .rider-register .left label{
+        flex-basis: 100%!important;
     }
 }
 .riders-view table tr td span{
