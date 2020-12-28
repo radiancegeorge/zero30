@@ -1731,3 +1731,24 @@ select{
         align-items: center;
     }
 }
+
+.rider-register .left .wrap{
+    /* flex-basis: 50%!important; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.rider-register .wrap input{
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid rgba(96, 84, 84, 0.68);
+}
+.rider-register .left label{
+    flex-basis: 48%;
+    margin: 10px 0;
+}
+.rider-register .left > h1{
+    padding: 20px;
+}
