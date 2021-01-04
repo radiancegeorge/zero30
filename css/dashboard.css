@@ -1612,6 +1612,7 @@ thead th{
     color: #E85D00;
     background: white;
 }
+
 .merchant-product{
     background-color: transparent;
 }
@@ -1781,4 +1782,17 @@ select{
 }
 .dataTables_filter input{
     padding: 8px;
+}
+.primary-color{
+    color: #E85D00!important;
+}
+.secondary-color{
+    color: #E5E5E5!important;
+}
+.tetiary-color{
+    color: green!important;
+}
+.btn-small{
+    font-size: 12px!important;
+    padding: 4px 8px!important;
 }
