@@ -1531,7 +1531,7 @@ th{
 }
 
 
-.dataTable tbody td:nth-child(7) {
+.dataTable tbody td:nth-child(7){
     padding: 2px 10px!important;
 }
 td{
@@ -1542,7 +1542,19 @@ thead th{
     padding: 10px 5px!important;
 }
 .paging_simple_numbers{
-    display: none;
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.paging_simple_numbers a, .paging_simple_numbers span{
+    width: fit-content!important;
+    padding: 5px!important;
+    min-width: 0;
+    font-family: Roboto;
+}
+.paging_simple_numbers span{
+    display: flex;
 }
 .dataTables_info{
     padding: 20px 0;
@@ -1763,4 +1775,10 @@ select{
 }
 .rider-register .left > h1{
     padding: 20px;
+}
+.dataTables_filter{
+    /* text-align: right; */
+}
+.dataTables_filter input{
+    padding: 8px;
 }
