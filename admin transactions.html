@@ -93,57 +93,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-user search-section transactions-search">
-                    <form action="">
-                        <label for="filter">
-                            <select name="filter" id="filter" >
-                                <optgroup>Filter
-                                    <option value="default">Filter</option>
-                                </optgroup>
-                            </select>
-                        </label>
-                        <label for="search">
-                            <input type="text" placeholder="Search">
-                        </label>
-                        
-                    </form>
-                    <div class="options-modified hide">
+                <div class="profile-user  ">
+                    <div class="search-section">
+                        <div class="transactions-search">
                             <form action="">
-                                <label for="status">
-                                    <p>Status</p>
-                                    <select name="status" id="">
-                                        <option value="paid">Paid</option>
+                                <label for="filter">
+                                    <select name="filter" id="filter" >
+                                        <optgroup>Filter
+                                            <option value="default">Filter</option>
+                                        </optgroup>
                                     </select>
                                 </label>
-                                <label for="channel">
-                                    <p>Channel</p>
-                                    <select name="status" id="">
-                                        <option value="paid">Cash</option>
-                                    </select>
+                                <label for="search">
+                                    <input type="text" placeholder="Search">
                                 </label>
-                                <label for="date period">
-                                    <p>Date Period</p>
-                                    <select name="status" id="">
-                                        <option value="paid">Today</option>
-                                    </select>
-                                </label>
-                                <label for="order id">
-                                    <p>Order ID</p>
-                                    <input type="text" required name="order_id" placeholder="Order ID">
-                                </label>
-                                <label for="custom period">
-                                    <p>Custom Period</p>
-                                    <input type="text" placeholder="Start Date" name="start_date"><input type="text" placeholder="End Date" name="end_date">
-                                </label>
-                                <div class="buttons">
-                                    <button type="reset"> Reset</button>
-                                    <button type="submit"> Filter</button>
-                                </div>
+                                
                             </form>
+                            <div class="options-modified hide">
+                                    <form action="">
+                                        <label for="status">
+                                            <p>Status</p>
+                                            <select name="status" id="">
+                                                <option value="paid">Paid</option>
+                                            </select>
+                                        </label>
+                                        <label for="channel">
+                                            <p>Channel</p>
+                                            <select name="status" id="">
+                                                <option value="paid">Cash</option>
+                                            </select>
+                                        </label>
+                                        <label for="date period">
+                                            <p>Date Period</p>
+                                            <select name="status" id="">
+                                                <option value="paid">Today</option>
+                                            </select>
+                                        </label>
+                                        <label for="order id">
+                                            <p>Order ID</p>
+                                            <input type="text" required name="order_id" placeholder="Order ID">
+                                        </label>
+                                        <label for="custom period">
+                                            <p>Custom Period</p>
+                                            <input type="text" placeholder="Start Date" name="start_date"><input type="text" placeholder="End Date" name="end_date">
+                                        </label>
+                                        <div class="buttons">
+                                            <button type="reset"> Reset</button>
+                                            <button type="submit"> Filter</button>
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="export-table">
+                                <button>Export</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="export-table">
-                        <button>Export</button>
-                    </div>
+                    
                 </div>
             </div>
             <div class="other-section">
