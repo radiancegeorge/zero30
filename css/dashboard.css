@@ -441,7 +441,8 @@ tr{
     background: white;
     width: 80%;
     margin: auto;
-    padding: 15px;
+    /* padding: 15px; */
+    display: flex;
 }
 .profile-detail-content .manage-options{
     width: 100%;
@@ -479,6 +480,10 @@ tr{
     width: 100%;
     /* border-spacing: 15px!important; */
 
+}
+.profile-detail-content .wrap{
+    min-width: 100%;
+    padding: 20px;
 }
 .profile-detail-content table th{
     border-bottom: 1px solid #E5E5E5;
@@ -1805,4 +1810,15 @@ select{
 }
 .m-0{
     margin: 0;
+}
+.tab-profile-content{
+    overflow-x: hidden ;
+}
+.tab-profile-content > div{
+    position: relative;
+    /* transform: translateX(); */
+    transition: 0.3s;
+}
+.tab-toggle{
+    cursor: pointer;
 }

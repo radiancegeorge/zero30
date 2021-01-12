@@ -95,8 +95,8 @@
                 </div>
                 <div class="search-section profile-section">
                     <ul>
-                        <li class="active"><a href="">Profile</a></li>
-                        <li><a href="">Users</a></li>
+                        <li class="active tab-toggle"><a>Profile</a></li>
+                        <li class="tab-toggle"><a>Users</a></li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +104,7 @@
             
                 <!-- boxes -->
                 <div class="container">
-                    <div class="profile-detail-content">
+                    <div class="profile-detail-content tab-profile-content">
                         <div class="wrap">
                             <h1>Your Profile</h1>
                             <form action="">
@@ -127,14 +127,164 @@
                                 <button >Save Changes</button>
                             </form>
                         </div>
+                        <div class="wrap">
+                            <div class="manage-options">
+                                <div class="roles">
+                                    <a href="/admin manage roles.html">
+                                        <img src="img/Shape.svg" alt="">
+                                        <span>Manage Roles</span>
+                                    </a>
+                                </div>
+                                <div class="roles add-user-btn">
+                                    <a>
+                                        <span>+ Add User</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <table class="admin-user-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone No</th>
+                                            <th>Role</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Joy Obianaba</td>
+                                            <td>joy.obianaba@gmail.com </td>
+                                            <td>08038782933</td>
+                                            <td>Business Owner</td>
+                                            <td>Active</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                
+            </div>
+            <div class="add-user-content hide">
+                <div class="wrap">
+                    <h1>Add User</h1>
+                    <form action="">
+                        <label for="full name">
+                            <p>Full Name</p>
+                            <input type="text" placeholder="Obiora Anyasi" name="full_name">
+                        </label>
+                        <label for="Email">
+                            <p>Email Address</p>
+                            <input type="text" placeholder="........@gmail.com" name="email">
+                        </label>
+                        <label for="role">
+                            <p>Role</p>
+                            <select name="" id="">
+                                <option value="">Choose Role</option>
+                            </select>
+                        </label>
+                        <div class="buttons">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Done</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
     </section>
 
-
+    
     <script src="js/index.js"></script>
+    <script src="js/dashboard.js"></script>
+
+    <script src="js/profileTab.js"></script>
 </body>
 </html>
