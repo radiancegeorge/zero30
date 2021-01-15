@@ -1822,3 +1822,10 @@ select{
 .tab-toggle{
     cursor: pointer;
 }
+.sub{
+    background: white;
+    min-width: 85%!important;
+}
+.search-section{
+    padding: 0;
+}
