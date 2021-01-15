@@ -1829,3 +1829,20 @@ select{
 .search-section{
     padding: 0;
 }
+.quick-select select{
+    padding: 5px 16px;
+    cursor: pointer;
+}
+
+.w-fit{
+    width: fit-content;
+}
+.d-inline{
+    display: inline;
+}
+.pointer{
+    cursor: pointer;
+}
+.quick-select button{
+    padding: 5px 16px;
+}
