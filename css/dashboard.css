@@ -953,7 +953,7 @@ tr{
     border: 1px solid #E5E5E5;
     position: absolute;
     z-index: 98;
-    left: 0;
+    left: 0px;
     margin-top: 20px;
     top: 90px;
     font-size: 14px;
@@ -1706,6 +1706,7 @@ select{
 }
 .orders .options-modified{
     margin-top: 45px;
+
 }
 .orders table{
     margin: 20px 0;
@@ -1845,4 +1846,41 @@ select{
 }
 .quick-select button{
     padding: 5px 16px;
+}
+@media (min-width: 1300px){
+    .sub{
+        min-width: 88%!important;
+    }
+    .sub .profile-user{
+        margin-left: 30px;
+    }
+}
+.selected-images{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected-images .img img{
+    width: 100%;
+}
+.selected-images .img{
+    width: 80px;
+    background: black;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+}
+.selected-images .img span{
+    padding: 0px 8px;
+    font-size: 12px;
+    color: white;
+    background: red;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* display: flex; */
 }
