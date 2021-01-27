@@ -7,6 +7,7 @@ window.addEventListener('load', e=>{
 
     const slide = (e)=>{
         const num = e;
+        // console.log(currentNum)
         currentNum = num;
         const elemWidth = profileSection.clientWidth;
         // console.log(elemWidth) 
@@ -16,13 +17,13 @@ window.addEventListener('load', e=>{
 
     usersBtn.addEventListener('click', e=>{
         slide(-1);
-        usersBtn.classList.toggle('active');
-        profileBtn.classList.toggle('active')
+        usersBtn.classList.add('active');
+        profileBtn.classList.remove('active')
     });
     profileBtn.addEventListener('click', e=>{
         slide(0);
-        profileBtn.classList.toggle('active');
-        usersBtn.classList.toggle('active');
+        profileBtn.classList.add('active');
+        usersBtn.classList.remove('active');
         // console.log('clicked')
     });
 
